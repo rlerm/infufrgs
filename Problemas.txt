@@ -1,0 +1,9 @@
+Problemas com o modelo da biblioteca:
+Resumo:
+  - Indentação em desacordo com o recomendado;
+  - Elementos pré-textuais não devem aparecer no sumário
+Espaçamentos:
+  - A norma especifica que o espaçamento depois do capítulo é de 1,5 ex e não 1,5cm 
+    (o exemplo da biblioteca também não segue a própria recomendação)
+Títulos:
+  - Deve haver um travessão entre a letra que designa apêndices e anexos e seus títulos.

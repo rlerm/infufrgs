@@ -1,0 +1,61 @@
+# LaTeX files
+*.acn
+*.acr
+*.alg
+*.aux
+*.bbl
+*.blg
+*.dvi
+*.fdb_latexmk
+*.glg
+*.glo
+*.gls
+*.idx
+*.ilg
+*.ind
+*.ist
+*.lof
+*.log
+*.lot
+*.maf
+*.mtc
+*.mtc0
+*.nav
+*.nlo
+*.out
+*.pdfsync
+*.ps
+*.snm
+*.synctex.gz*
+*.toc
+*.vrb
+*.xdy
+*.tdo
+*.fls
+.$*.bib$
+# Emacs file?
+\#*\#
+# TexStudio session file
+*.txss
+# Sublie text workspace
+*.sublime-workspace
+# Vim file?
+*.swp
+
+# Ignore pdfs, except those on the references,
+# image and comments directories
+*.pdf
+!**/modelos/*.pdf
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+# Folder config file
+Desktop.ini
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Linux hidden files
+.*
+!.gitignore
+*~
