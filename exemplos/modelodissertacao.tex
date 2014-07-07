@@ -1,3 +1,5 @@
+% Mudando a lingua principal do documento sem gerar warnings
+% \PassOptionsToPackage{main=english}{babel}
 \documentclass[
 	% 12pt,a4paper,
 	% twoside,			% para impressão em verso e anverso. Oposto a oneside
@@ -12,14 +14,12 @@
 % Pacotes fundamentais 
 % ---
 \usepackage{cmap}				% Mapear caracteres especiais no PDF
-
 \usepackage[T1]{fontenc}		% Selecao de codigos de fonte.
 \usepackage[utf8]{inputenc}		% Codificacao do documento (conversão automática dos acentos)
-\usepackage{lastpage}			% Usado pela Ficha catalográfica
-\usepackage{indentfirst}		% Indenta o primeiro parágrafo de cada seção.
-\usepackage{color}				% Controle das cores
+
+\usepackage{xcolor}				% Controle das cores
 \usepackage{graphicx}			% Inclusão de gráficos
-\usepackage{todonotes}
+\usepackage[obeyFinal]{todonotes}
 \usepackage{tabularx}
 
 % Inicializações do Hyperref
@@ -33,7 +33,7 @@
 }
 \makeatother
 
-\usepackage[acronym,shortcuts,nonumberlist,nomain]{glossaries}
+\usepackage[acronym,shortcuts,nonumberlist,nomain,noredefwarn]{glossaries}
 \makeglossaries
 
 \usepackage[

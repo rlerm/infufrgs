@@ -81,6 +81,9 @@
 % Para ficha catalografica
 \RequirePackage{lastpage}
 
+% Indenta o primeiro parágrafo de cada seção.
+\RequirePackage{indentfirst}
+
 \RequirePackage{iidefs}
 \RequirePackage{etoolbox}
 
