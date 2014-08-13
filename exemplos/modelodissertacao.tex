@@ -10,75 +10,74 @@
 	]
 	{infufrgs}
 
-% ---
-% Pacotes fundamentais 
-% ---
-\usepackage{cmap}				% Mapear caracteres especiais no PDF
-\usepackage[T1]{fontenc}		% Selecao de codigos de fonte.
-\usepackage[utf8]{inputenc}		% Codificacao do documento (conversão automática dos acentos)
+	% ---
+	% Pacotes fundamentais 
+	% ---
+	\usepackage{cmap}				% Mapear caracteres especiais no PDF
+	\usepackage[T1]{fontenc}		% Selecao de codigos de fonte.
+	\usepackage[utf8]{inputenc}		% Codificacao do documento (conversão automática dos acentos)
 
-\usepackage{xcolor}				% Controle das cores
-\usepackage{graphicx}			% Inclusão de gráficos
-\usepackage{tabularx}
+	\usepackage{xcolor}				% Controle das cores
+	\usepackage{graphicx}			% Inclusão de gráficos
+	\usepackage{tabularx}
 
-% Inicializações do Hyperref
-\makeatletter
-\hypersetup{%
-		hidelinks,
-		pdftitle={\@title}, 
-		pdfauthor={\@author},
-	    pdfcreator={pdfLaTeX},
-		bookmarksdepth=4
-}
-\makeatother
+	% Inicializações do Hyperref
+	\makeatletter
+	\hypersetup{%
+			hidelinks,
+			pdftitle={\@title}, 
+			pdfauthor={\@author},
+		    pdfcreator={pdfLaTeX},
+			bookmarksdepth=4
+	}
+	\makeatother
 
-\usepackage[acronym,shortcuts,nonumberlist,nomain,noredefwarn]{glossaries}
-\makeglossaries
+	\usepackage[acronym,shortcuts,nonumberlist,nomain,noredefwarn]{glossaries}
+	\makeglossaries
 
-% O pacote para citações não é incluído na classe, eliminando uma dependência.
-\usepackage[
-	alf,
-	abnt-url-package=hyperref,
-	% Usar negrito para os títulos das referências, 
-	% como está no modelo da UFRGS
-	abnt-emphasize=bf
-]{abntex2cite}	% Referências bibliograficas com o pacote abntex2
+	% O pacote para citações não é incluído na classe, eliminando uma dependência.
+	\usepackage[
+		alf,
+		abnt-url-package=hyperref,
+		% Usar negrito para os títulos das referências, 
+		% como está no modelo da UFRGS
+		abnt-emphasize=bf
+	]{abntex2cite}	% Referências bibliograficas com o pacote abntex2
 
-\titulo{Normas para apresentação de dissertações do Instituto de Informática e do PPGC}
-\autor{João}{da Silva}
-\orientador{Prof. Dr.}{Orientador}{da Silva}
-\coorientador{Prof. Dr.}{Co-orientador}{da Silva}
-% \autor{João da Silva}
-% \orientador{Prof. Dr. Orientador da Silva}
-% \coorientador{Prof. Dr. Co-orientador}
-% \local{Porto Alegre}{RS}
-\data{2014}
-\instituicao{%
-	Universidade Federal do Rio Grande do Sul
-	\par
-	Instituto de Informática
-	\par
-	Programa de Pós-graduação em Computação}
-% Definição das palavras-chave
-\keyword{ABNT}
-\keyword{Processadores de texto}
-\keyword{Formatação eletrônica de documentos}
+	\titulo{Normas para apresentação de dissertações do Instituto de Informática e do PPGC}
+	\autor{João}{da Silva}
+	\orientador{Prof. Dr.}{Orientador}{da Silva}
+	\coorientador{Prof. Dr.}{Co-orientador}{da Silva}
+	% \local{Porto Alegre}{RS}
+	\data{\number\year}
+	% \data{2014}
 
-% Necessario apenas para este exemplo
-\usepackage{framed}
-\usepackage[obeyFinal]{todonotes}
+	\instituicao{%
+		Universidade Federal do Rio Grande do Sul
+		\par
+		Instituto de Informática
+		\par
+		Programa de Pós-graduação em Computação}
+	% Definição das palavras-chave
+	\keyword{ABNT}
+	\keyword{Processadores de texto}
+	\keyword{Formatação eletrônica de documentos}
 
-% Test acronyms
-\newacronym{bb}{BB}{Banco do Brasil}
-\newacronym{cc}{CC}{Código Civil}
-\newacronym{br}{BR}{Brasil}
-\newacronym{ufrgs}{UFRGS}{Universidade Federal do Rio Grande do Sul}
-\newacronym{bd}{BD}{Banco de Dados}
-\glsunset{bb}
-\glsunset{cc}
-\glsunset{br}
-\glsunset{ufrgs}
-\glsunset{bd}
+	% Necessario apenas para este exemplo
+	\usepackage{framed}
+	\usepackage[obeyFinal]{todonotes}
+
+	% Test acronyms
+	\newacronym{bb}{BB}{Banco do Brasil}
+	\newacronym{cc}{CC}{Código Civil}
+	\newacronym{br}{BR}{Brasil}
+	\newacronym{ufrgs}{UFRGS}{Universidade Federal do Rio Grande do Sul}
+	\newacronym{bd}{BD}{Banco de Dados}
+	\glsunset{bb}
+	\glsunset{cc}
+	\glsunset{br}
+	\glsunset{ufrgs}
+	\glsunset{bd}
 
 \begin{document}
 	% \imprimircapa
