@@ -12,7 +12,7 @@
 % a look in `iiufrgs.cls' to see complete information on using, copying
 % and redistributing these files
 %
-\@namedef{captionsenglish}{%
+\addto\captionsenglish{%
 	\def\bibname{References}%
 	\def\abstractname{Abstract}%
 	\def\appendixname{Appendix}%
