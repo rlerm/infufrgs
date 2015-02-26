@@ -13,9 +13,6 @@
 % and redistributing these files
 %
 \addto\captionsenglish{%
-	\def\bibname{References}%
-	\def\abstractname{Abstract}%
-	\def\appendixname{Appendix}%
 	\def\contentsname{Contents}%
 	\def\listfigurename{List of Figures}%
 	\def\listtablename{List of Tables}%
@@ -32,10 +29,10 @@
 	\def\lemmaname{Lemma}%
 	\def\theoremname{Theorem}%
 	\def\proofname{Proof}%
-	\def\figurename{Figure}%
-	\def\tablename{Table}%
-	\def\advisorname{Advisor}%
-	\def\coadvisorname{Coadvisor}%
+	\def\advisorname{Advisor:}%
+	\def\coadvisorname{Coadvisor:}%
+	\def\orientadorname{\advisorname}
+	\def\coorientadorname{\coadvisorname}
 	\def\listabbrvname{List of Abbreviations and Acronyms}%
 	\def\listsymbolname{List of Symbols}%
 	\def\annexname{Annex}%
