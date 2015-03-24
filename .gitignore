@@ -45,7 +45,7 @@
 # Ignore pdfs, except those on the references,
 # image and comments directories
 *.pdf
-!**/modelos/*.pdf
+!**/templates/**/*.pdf
 
 # Windows image file caches
 Thumbs.db
