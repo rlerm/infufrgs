@@ -10,7 +10,7 @@
 %% version 2005/12/01 or later.
 %%
 %% This work has the LPPL maintenance status `maintained'.
-%% 
+%%
 %% The Current Maintainer of this work is Rafael Lerm, rafael.lerm@inf.ufrgs.br
 %%
 %% Further information about abnTeX2 are available on http://abntex2.googlecode.com/
@@ -23,18 +23,18 @@
 \ProvidesClass{infufrgs}[2014/04/07 v1.0 Modelo do Instituto de Informática da UFRGS baseado em abnTeX2]
 
 %==============================================================================
-% Declaração de opções
+% Declaração de opções.
 %==============================================================================
 \newcommand{\iiu@novodoc}[1]{\DeclareOption{#1}{\AtEndOfClass{\input{#1.def}}}}
 \newcommand{\iiu@aliasdoc}[2]{\DeclareOption{#1}{\AtEndOfClass{\input{#2.def}}}}
 
-% programas
+% Programas.
 \iiu@novodoc{cic}
 \iiu@novodoc{ecp}
 \iiu@novodoc{pgmicro}
 \iiu@novodoc{ppgc}
 
-% tipos de documento
+% Tipos de documento.
 \iiu@novodoc{dipl}
 \iiu@aliasdoc{tc}{dipl}
 \iiu@novodoc{ti}
@@ -43,7 +43,7 @@
 \iiu@novodoc{prop-tese}
 \iiu@novodoc{plano-doutorado}
 
-% Documentos de Doutorado e Mestrado
+% Documentos de Doutorado e Mestrado.
 \iiu@novodoc{diss}
 \iiu@novodoc{tese}
 \iiu@aliasdoc{mestrado}{diss}
@@ -52,7 +52,7 @@
 \iiu@novodoc{formais}
 
 %==============================================================================
-% Herança da classe abntex2 e inclusão de pacotes e arquivos necessários
+% Herança da classe abntex2 e inclusão de pacotes e arquivos necessários.
 %==============================================================================
 
 \PassOptionsToClass{%
@@ -61,10 +61,10 @@
 	a4paper,
 	chapter=TITLE}
 	{abntex2}
-% Repassa todos os parametros para a classe abntex2, 
+% Repassa todos os parametros para a classe abntex2.
 \DeclareOption*{%
   \PassOptionsToClass{\CurrentOption}{abntex2}%
-} 
+}
 \ProcessOptions\relax
 \LoadClass{abntex2}
 
@@ -72,13 +72,13 @@
 \input{brazilian.babel}
 \input{english.babel}
 
-% O Instituto especifica o uso de fonte Times para o corpo do texto
+% O Instituto especifica o uso de fonte Times para o corpo do texto.
 \RequirePackage{mathptmx}
-% Fonte Helvetica (quase Arial) para títulos
+% Fonte Helvetica (quase Arial) para títulos.
 \RequirePackage{helvet}
 \RequirePackage{courier}
 
-% Para ficha catalografica
+% Necessário para ficha catalografica.
 \RequirePackage{lastpage}
 
 % Indenta o primeiro parágrafo de cada seção.
@@ -98,7 +98,7 @@
 % \RequirePackage[
 % 	alf,
 % 	abnt-url-package=hyperref,
-% 	% Usar negrito para os títulos das referências, 
+% 	% Usar negrito para os títulos das referências,
 % 	% como está no modelo da UFRGS
 % 	abnt-emphasize=bf
 % ]{abntex2cite}
@@ -277,7 +277,7 @@
 				\@cipspecificinfo\ -- \ufrgs, \ii, \@course, \@city, BR--\@state, \imprimirdata.\par
 
 				\@cipkw
-				I.~\ii@orientadorlast, \ii@orientadorfirst, orient. 
+				I.~\ii@orientadorlast, \ii@orientadorfirst, orient.
 				\ifdefempty{\imprimircoorientador}{
 					II.~T\'{\i}tulo.
 				}{
