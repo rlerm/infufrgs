@@ -155,15 +155,18 @@
 \end{resumoestrangeiro}
 
 % Inserir lista de ilustrações.
-\listoffigures
+% O uso do * serve para que esta página não seja listada no sumário, como
+% manda as normas ABNT.
+\listoffigures*
 \cleardoublepage
 
 % Inserir lista de tabelas.
-\listoftables
+\listoftables*
 \cleardoublepage
 
 % Inserir lista de abreviaturas e siglas
-\printglossary[type=\acronymtype,title={Lista de Abreviaturas e Siglas}]
+\glssetwidest{UFRGS}
+\printacronyms[title={Lista de Abreviaturas e Siglas}]
 \cleardoublepage
 
 % Inserir o sumario.
