@@ -1,9 +1,19 @@
-Problemas com o modelo da biblioteca:
+Problemas com o modelo da biblioteca --- ou, divergências com as normas da ABNT:
+
+Lista de figuras e tabelas:
+    - Entre o número e a descrição das figuras e tabelas deve haver um
+      travessão, e não dois pontos (NBR 14724:2011, item 4.2.1.9)
+
 Resumo:
-  - Indentação em desacordo com o recomendado;
-  - Elementos pré-textuais não devem aparecer no sumário
+  - Indentação em desacordo com o recomendado tanto no modelo da biblioteca
+    quanto na norma NBR 6027, item 5.2;
+  - Elementos pré-textuais (como lista de figuras e resumo) não devem aparecer
+    no sumário (NBR 6027, item 6.3), ao contrário do modelo da biblioteca;
+
 Espaçamentos:
-  - A norma especifica que o espaçamento depois do capítulo é de 1,5 ex e não 1,5cm 
-    (o exemplo da biblioteca também não segue a própria recomendação)
+  - A norma especifica que o espaçamento depois do capítulo é de 1,5 ex e não
+    1,5cm (o exemplo da biblioteca também não segue a própria recomendação)
+
 Títulos:
-  - Deve haver um travessão entre a letra que designa apêndices e anexos e seus títulos.
+  - Deve haver um travessão entre a letra que designa apêndices e anexos e seus
+    títulos.
