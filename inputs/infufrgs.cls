@@ -319,7 +319,7 @@
 	\begin{otherlanguage}{#1}
 	\centering\textbf{#2}
 	\gdef\@foreignkeywords{#3}%
-	\par
+    \par
 
 	\PRIVATEbookmarkthis{\abstractname}
 	\renewcommand{\abstractnamefont}{\chaptitlefont}
