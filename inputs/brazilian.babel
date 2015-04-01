@@ -59,8 +59,8 @@
 	\def\planodoutoradospecificinfo{Plano de Curso para Doutorado}%
 	\def\proptesespecificinfo{Proposta de Tese de Doutorado}%
 	\def\tcname{Trabalho de Conclus\~{a}o}%
-        \def\cicTitulacaoEm{Ci{\^e}ncia da Computa{\'c}{\~a}o}
-        \def\ecpTitulacaoEm{Engenharia da Computa{\'c}{\~a}o}
+        \def\cicTitulacaoEm{Ci{\^e}ncia da Computa{\c{c}}{\~a}o}
+        \def\ecpTitulacaoEm{Engenharia da Computa{\c{c}}{\~a}o}
 	\def\tcspecificinfo{%
 		Monografia apresentada como requisito
 		parcial para a obten{\c{c}}{\~a}o do grau de Bacharel
@@ -71,7 +71,7 @@
 	\def\especname{Monografia (especializa{\c{c}}{\~a}o)}%
 	\def\especspecificinfo{%
 		Monografia de Conclus{\~a}o de Curso apresentada como
-		requisito parcial para a obten{\c{c}}{\~a}o do grau de Especialista
+		requisito parcial para a obten{\c{c}}{\~a}o do grau de Especialista em \titulacaoEm
 	}%
 	\def\coordname{Coordenador do Curso}%
 }

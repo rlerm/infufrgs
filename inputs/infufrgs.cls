@@ -87,10 +87,10 @@
 \RequirePackage{iidefs}
 \RequirePackage{etoolbox}
 
-% Formato do cabeçalho de páginas
+% Formato do cabeçalho de páginas.
 \aliaspagestyle{abntheadings}{simple}
 
-% O estilo da UFRGS não está de acordo com a ABNT neste ponto
+% O estilo da UFRGS não está de acordo com a ABNT neste ponto.
 \addto\captionsbrazil{
 	\renewcommand{\listfigurename}{Lista de Figuras}
 }
@@ -126,7 +126,7 @@
 \setlength\afterchapskip{\baselineskip}
 
 %==============================================================================
-% Folha de rosto (o modelo da biblioteca não tem capa)
+% Folha de rosto (o modelo da biblioteca não tem capa).
 %==============================================================================
 \newlength{\titlepagewinwidth}\setlength{\titlepagewinwidth}{95mm}
 \newlength{\titlepagewinheight}\setlength{\titlepagewinheight}{62mm}
@@ -184,7 +184,7 @@
 }
 
 %==============================================================================
-% Redefinindo o tratamento dos nomes para separar nome e sobrenome
+% Redefinindo o tratamento dos nomes para separar nome e sobrenome.
 %==============================================================================
 \newcounter{ii@authorcount}
 \let\ii@abntexautor\autor
@@ -200,10 +200,11 @@
 	\ii@abntexorientador{#1 #2 #3}
 }
 \let\ii@abntexcoorientador\coorientador
+
 \renewcommand{\coorientador}[3]{
-	\newcommand{\ii@coorientadorfirst}{#2}
-	\newcommand{\ii@coorientadorlast}{#3}
-	\ii@abntexcoorientador{#1 #2 #3}
+    \newcommand{\ii@coorientadorfirst}{#2}
+    \newcommand{\ii@coorientadorlast}{#3}
+    \ii@abntexcoorientador{#1 #2 #3}
 }
 % Redefinindo o local
 \let\ii@abntexlocal\local
