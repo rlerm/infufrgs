@@ -48,7 +48,7 @@
 
 % O pacote glossaries é usado aqui para gerar a lista de siglas
 % (com uso do hyperref!).
-\usepackage[acronym,shortcuts,nonumberlist,nomain,noredefwarn]{glossaries}
+\usepackage[shortcuts,nomain,noredefwarn]{glossaries}
 \makeglossaries
 
 % Referências bibliograficas são feitas com o pacote abntex2cite.
@@ -165,8 +165,8 @@
 \cleardoublepage
 
 % Inserir lista de abreviaturas e siglas
-\glssetwidest{UFRGS}
-\printacronyms[title={Lista de Abreviaturas e Siglas}]
+% \glssetwidest{UFRGS}
+\printacronyms
 \cleardoublepage
 
 % Inserir o sumario.
