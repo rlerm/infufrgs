@@ -84,6 +84,35 @@
 % Indenta o primeiro parágrafo de cada seção.
 \RequirePackage{indentfirst}
 
+% Opções necessárias para o pacote glossaries (útil para lista de siglas).
+\PassOptionsToPackage{acronym,nogroupskip,nonumberlist}{glossaries}
+% Cria um estilo próprio para a lista de siglas, usando ambientes da classe memoir.
+% Quando a classe glossaries não é carregada, o código abaixo é um nop.
+\AtBeginDocument{
+    \@ifpackageloaded{glossaries}{
+        \newcommand{\itlabel}[1]{\hspace\labelsep\normalfont\bfseries #1}
+
+        \newglossarystyle{infufrgs}{
+            % O tipo base é o list, mas muito da parte principal é reescrita.
+            \setglossarystyle{list}
+
+            \renewenvironment{theglossary}{
+                \defaultlists
+                \OnehalfSpacing
+                \begin{symbols}
+                    \setlength{\itemsep}{0pt}
+                    \addtolength{\labelwidth}{1em}
+
+                    \let\makelabel\itlabel
+            }{
+                \end{symbols}
+            }
+        }
+        \renewcommand\acronymname\listabbrvname
+        \setglossarystyle{infufrgs}
+    }{}
+}
+
 \RequirePackage{iidefs}
 \RequirePackage{etoolbox}
 
