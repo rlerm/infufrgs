@@ -136,8 +136,7 @@
 \counterwithin{table}{chapter}
 
 %==============================================================================
-% Fontes para os titulos
-%==============================================================================
+% Fontes para os titulos.
 \renewcommand{\ABNTEXpartfont}{\sffamily\fontseries{b}\selectfont}
 \renewcommand{\ABNTEXchapterfont}{\sffamily\fontseries{b}\selectfont}
 \renewcommand{\ABNTEXsectionfont}{\sffamily\fontseries{b}\selectfont}
@@ -152,7 +151,14 @@
 \renewcommand{\ABNTEXsubsubsectionfontsize}{\normalsize}
 \renewcommand{\ABNTEXsubsubsubsectionfontsize}{\normalsize}
 
+%==============================================================================
+% Espaçamentos em geral.
 \setlength\afterchapskip{\baselineskip}
+
+% Faz com que páginas de floats (p em "htbp") sejam alinhadas pelo topo, e não
+% centralizadas verticalmente como é o padrão.
+% Isto foi um requerimento da biblioteca, infelizmente.
+\setlength{\@fptop}{0pt}
 
 %==============================================================================
 % Folha de rosto (o modelo da biblioteca não tem capa).
