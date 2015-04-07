@@ -2,7 +2,7 @@
 
 Estilo Latex para trabalhos acadêmicos do Instituto de Informática da UFRGS, baseado no abntex2. 
 
-Atualizado para as novas "normas" da biblioteca do Instituto de Informática. O exemplo já foi enviado para avaliação da bilioteca no dia 02/07/2014, mas nunca houve uma resposta.
+Atualizado para os novos modelos da biblioteca do Instituto de Informática. O exemplo de dissertação foi enviado para a avaliação da biblioteca e todas as pendências foram resolvidas, exceto uma (uso de endash nas referências). Estamos aguardando resposta da biblioteca nesta questão.
 
 Existe uma outra classe de documento para o instituto de informáticam que vem sendo mantido pelo [UTUG](http://www.inf.ufrgs.br/utug/). A sua versão atual de desenvolvimento pode ser encontrada no [github](https://github.com/schnorr/iiufrgs).
 Muito código de lá foi aproveitado aqui, onde fazia sentido, e modificações que ocorrem lá serão reproduzidas aqui na medida do possível.
