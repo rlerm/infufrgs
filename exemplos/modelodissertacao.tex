@@ -425,14 +425,17 @@ autor do documento consultado. Em nota de rodapé devem ser mencionados os dados
 do documento original. Na lista de referências bibliográficas, incluir o
 documento efetivamente consultado. Outra opção é incluir as duas referências
 dos documentos na lista de referências do trabalho; neste caso, não se inclui
-nota de rodapé. A seguir um exemplo com nota de rodapé:
+nota de rodapé. A seguir um exemplo que usa a segunda opção:
 
-Segundo Franco\footciteref{franco} (apud FURTADO, 1996, p. 5), texto texto
-texto texto texto \todo{Não reproduzido}
+\begin{framed}
+    Segundo \apudonline[ p.~5]{franco}{furtado}, texto texto texto texto texto
+\end{framed}
 
 ou
 
-texto texto texto texto texto \apud[p.~5]{franco}{furtado}
+\begin{framed}
+    texto texto texto texto texto \apud[p.~5]{franco}{furtado}
+\end{framed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Conclusão}
