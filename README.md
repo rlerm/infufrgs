@@ -4,6 +4,8 @@ Estilo Latex para trabalhos acadêmicos do Instituto de Informática da UFRGS, b
 
 Atualizado para os novos modelos da biblioteca do Instituto de Informática. O exemplo de dissertação foi enviado para a avaliação da biblioteca e todas as pendências foram resolvidas, exceto uma (uso de endash nas referências). Estamos aguardando resposta da biblioteca nesta questão.
 
+Veja um exemplo de dissertação de mestrado, seguindo o modelo da biblioteca, [aqui](http://inf.ufrgs.br/~rarlerm/infufrgs/modelodissertacao.pdf).
+
 Existe uma outra classe de documento para o instituto de informáticam que vem sendo mantido pelo [UTUG](http://www.inf.ufrgs.br/utug/). A sua versão atual de desenvolvimento pode ser encontrada no [github](https://github.com/schnorr/iiufrgs).
 Muito código de lá foi aproveitado aqui, onde fazia sentido, e modificações que ocorrem lá serão reproduzidas aqui na medida do possível.
 Alguns dos aspectos em comum:
