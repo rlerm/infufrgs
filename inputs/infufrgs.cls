@@ -59,7 +59,8 @@
 	12pt,
 	openright,
 	a4paper,
-	chapter=TITLE}
+	chapter=TITLE,
+  sumario=abnt-6027-2012}
 	{abntex2}
 % Repassa todos os parametros para a classe abntex2.
 \DeclareOption*{%
@@ -141,8 +142,8 @@
 \renewcommand{\ABNTEXchapterfont}{\sffamily\fontseries{b}\selectfont}
 \renewcommand{\ABNTEXsectionfont}{\sffamily\fontseries{b}\selectfont}
 \renewcommand{\ABNTEXsubsectionfont}{\sffamily\fontseries{b}\selectfont}
-\renewcommand{\ABNTEXsubsubsectionfont}{\sffamily\fontshape{it}\selectfont}
-\renewcommand{\ABNTEXsubsubsubsectionfont}{\sffamily\selectfont}
+\renewcommand{\ABNTEXsubsubsectionfont}{\sffamily\fontseries{\seriesdefault}\fontshape{it}\selectfont}
+\renewcommand{\ABNTEXsubsubsubsectionfont}{\sffamily\fontseries{\seriesdefault}\selectfont}
 
 \renewcommand{\ABNTEXchapterfontsize}{\normalsize}
 \renewcommand{\ABNTEXpartfontsize}{\normalsize}
@@ -150,6 +151,8 @@
 \renewcommand{\ABNTEXsubsectionfontsize}{\normalsize}
 \renewcommand{\ABNTEXsubsubsectionfontsize}{\normalsize}
 \renewcommand{\ABNTEXsubsubsubsectionfontsize}{\normalsize}
+
+\renewcommand{\cftsubsubsectionfont}{\ABNTEXsubsubsectionfont}
 
 %==============================================================================
 % Espaçamentos em geral.
