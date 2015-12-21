@@ -145,14 +145,25 @@
 \renewcommand{\ABNTEXsubsubsectionfont}{\sffamily\fontseries{\seriesdefault}\fontshape{it}\selectfont}
 \renewcommand{\ABNTEXsubsubsubsectionfont}{\sffamily\fontseries{\seriesdefault}\selectfont}
 
-\renewcommand{\ABNTEXchapterfontsize}{\normalsize}
 \renewcommand{\ABNTEXpartfontsize}{\normalsize}
+\renewcommand{\ABNTEXchapterfontsize}{\normalsize}
 \renewcommand{\ABNTEXsectionfontsize}{\normalsize}
 \renewcommand{\ABNTEXsubsectionfontsize}{\normalsize}
 \renewcommand{\ABNTEXsubsubsectionfontsize}{\normalsize}
 \renewcommand{\ABNTEXsubsubsubsectionfontsize}{\normalsize}
 
-\renewcommand{\cftsubsubsectionfont}{\ABNTEXsubsubsectionfont}
+\renewcommand{\cftpartfont}{\ABNTEXpartfontsize\ABNTEXpartfont}
+\renewcommand{\cftchapterfont}{\ABNTEXchapterfontsize\ABNTEXchapterfont}
+\renewcommand{\cftsectionfont}{\ABNTEXsectionfontsize\ABNTEXsectionfont}
+\renewcommand{\cftsubsectionfont}{\ABNTEXsubsectionfontsize\ABNTEXsubsectionfont}
+\renewcommand{\cftsubsubsectionfont}{\ABNTEXsubsubsectionfontsize\ABNTEXsubsubsectionfont}
+\renewcommand{\cftsubsubsubsectionfont}{\ABNTEXsubsubsubsectionfontsize\ABNTEXsubsubsubsectionfont}
+
+\settocpreprocessor{chapter}{%
+    \let\tempf@rtoc\f@rtoc%
+    \def\f@rtoc{%
+        \texorpdfstring{\MakeTextUppercase{\tempf@rtoc}}{\tempf@rtoc}}%
+}
 
 %==============================================================================
 % Espaçamentos em geral.
